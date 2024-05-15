@@ -6,6 +6,7 @@ async function main(){
     const address ='FjEKhdhqskSHUgkTxuDA55WoynHx6UyCxxS7caX1QXJi' 
     let connection = new Connection(clusterApiUrl("mainnet-beta"), "confirmed");
     let t = await getTransactionsOfUser(address, {}, connection)
+    console.log(t)
 
 }
 main()

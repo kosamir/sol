@@ -7,10 +7,10 @@ export default async function getTransactionsOfUser(address, options, connection
       const transSignatures =
         // await connection.getConfirmedSignaturesForAddress2(publicKey, options);
         await connection.getSignaturesForAddress(publicKey, {limit: 1000});
-      // console.log({ transSignatures });
+      console.log({ transSignatures });
       const transactions = [];
 
-      for (let i = 0; i < transSignatures.length; i++) {
+      for (let i = 0; i < 2; i++) {
         const signature = transSignatures[i].signature;
         const confirmedTransaction = await connection.getConfirmedTransaction(
           signature,
