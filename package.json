@@ -1,0 +1,16 @@
+{
+  "name": "sol",
+  "version": "1.0.0",
+  "description": "test",
+  "type":"module",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "amirkos",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.91.8",
+    "await": "^0.2.6"
+  }
+}
