@@ -11,7 +11,7 @@ export default async function getTransactionsOfUser(address, options, connection
       const transactions = [];
 
       for (let i = 0; i < transSignatures.length; i++) {
-        const signature = transSignatures[j].signature;
+        const signature = transSignatures[i].signature;
         const confirmedTransaction = await connection.getConfirmedTransaction(
           signature,
         );
